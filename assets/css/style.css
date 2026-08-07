@@ -15,8 +15,8 @@
 .article .ad-inline,.article-side .ad-slot{display:none}
 
 /* 記事の内容に合わせた挿絵を、画面幅に応じてきれいに表示します。 */
-.article-hero{overflow:hidden;background:var(--cream)}
-.article-hero img{display:block;width:100%;height:100%;object-fit:cover}
+.article-hero{position:relative;overflow:hidden;background:var(--cream)}
+.article-hero img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .visual-kizuna{color:white;background:var(--sage);font-family:Georgia,serif}.source-note{font-size:.78rem;color:var(--muted)}.source-note a{text-decoration:underline}
 /* ブランドと実話中心のプロフィールを強化 */
 .header-inner{min-height:82px}.brand{gap:12px}.brand-mark{position:relative;width:48px;height:48px;border-radius:14px 14px 20px 14px;background:var(--sage-dark);box-shadow:inset 0 0 0 2px rgba(255,255,255,.22)}.brand-mark b{font-size:1.65rem;line-height:1}.brand-mark i{position:absolute;right:7px;bottom:6px;width:8px;height:8px;border:2px solid white;border-radius:50%}.brand-copy{display:grid;line-height:1.05}.brand-copy strong{font:800 1.42rem Georgia,"Yu Mincho",serif;letter-spacing:.12em}.brand-copy small{margin-top:6px;color:var(--muted);font-size:.63rem;font-weight:700;letter-spacing:.08em}.brand-footer .brand-copy small{color:#bfc8c2}.brand:not(:has(.brand-copy))>span:last-child{display:grid;font-size:0}.brand:not(:has(.brand-copy))>span:last-child:before{content:"KIZUNA";font:800 1.42rem Georgia,"Yu Mincho",serif;letter-spacing:.12em}.brand:not(:has(.brand-copy))>span:last-child:after{content:"親と家族のスマホ安心ノート";margin-top:6px;color:var(--muted);font:700 .63rem "Yu Gothic",sans-serif;letter-spacing:.08em}.site-footer .brand:not(:has(.brand-copy))>span:last-child:after{color:#bfc8c2}
